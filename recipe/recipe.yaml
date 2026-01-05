@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.3.0"
+  version: "0.4.0"
 
 package:
   name: macroverse
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/m/macroverse/macroverse-${{ version }}.tar.gz
-    sha256: 3394e7676194e092cc8df6aa82afe8e2f9b11bbf0c1b1e256e0e3c9d6270e75e
+    sha256: b369897bd74276aa92624f84fd0ef29642490490f981796cd99c780282e3053d
 
 build:
   number: 0
@@ -39,6 +39,7 @@ requirements:
     - psutil
     - types-psutil
     - types-PyYAML
+    - nginx
 
 tests:
   - python:
