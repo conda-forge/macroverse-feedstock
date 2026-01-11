@@ -34,7 +34,7 @@ requirements:
     - fps-login
     - fps-jupyterlab
     - fps-contents
-    - fps-file-id",
+    - fps-file-id
     - fps-file-watcher
     - fps-nbconvert
     - fps-yjs
