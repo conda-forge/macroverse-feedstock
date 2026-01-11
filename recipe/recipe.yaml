@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.4.0"
+  version: "0.5.0"
 
 package:
   name: macroverse
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/m/macroverse/macroverse-${{ version }}.tar.gz
-    sha256: b369897bd74276aa92624f84fd0ef29642490490f981796cd99c780282e3053d
+    sha256: a86f035a2f749a515dc22b29fd312d9c5b4c7721eb30debde5b3da8daf87beea
 
 build:
   number: 0
@@ -27,12 +27,22 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - jupyverse >=0.11.1,<0.12.0
-    - fps-jupyterlab >=0.10.5,<0.11.0
-    - fps-auth >=0.9.3,<0.10.0
-    - fps-login >=0.9.3,<0.10.0
+    - fps >=0.5.8,<0.6.0
+    - fastapi
+    - anycorn >=0.18.1,<0.19.0
+    - fps-auth
+    - fps-login
+    - fps-jupyterlab
+    - fps-contents
+    - fps-file-id
+    - fps-file-watcher
+    - fps-nbconvert
+    - fps-yjs
+    - fps-lab
+    - fps-frontend
+    - jupyverse-api
     - cyclopts >=4.4.3,<5.0.0
-    - holm >=0.7.4
+    - holm >=0.8.1
     - pyyaml >=6.0.3,<7.0.0
     - httpx >=0.28.1,<1.0.0
     - structlog
@@ -48,13 +58,13 @@ tests:
       pip_check: true
       python_version: ${{ python_min }}.*
   - script:
-    - macroverse --help
+      - macroverse --help
 
 about:
   license: MIT
   license_file: LICENSE
   homepage: https://github.com/davidbrochart/macroverse
-  summary: Jupyverse deployment.
+  summary: Jupyverse environment deployment.
 
 extra:
   recipe-maintainers:
