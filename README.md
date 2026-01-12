@@ -7,7 +7,7 @@ Home: https://github.com/davidbrochart/macroverse
 
 Package license: MIT
 
-Summary: Jupyverse deployment.
+Summary: Jupyverse environment deployment.
 
 Current build status
 ====================
