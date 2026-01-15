@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.6.0"
+  version: "0.6.1"
 
 package:
   name: macroverse
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/m/macroverse/macroverse-${{ version }}.tar.gz
-    sha256: 34d9ae966c1f5aa00d636b361dd57e226361e8c69717d940881e9865f33d3423
+    sha256: d9cc4afae6819825c105b215e73ef80da4afb036d3a13feb6889e7cdca97c5c1
 
 build:
   number: 0
